@@ -15,7 +15,7 @@ public class PasswordCheck {
             for (int i = 0; i < password.length(); i++)
             {
                 a = (Character.isLetterOrDigit(array[i]));
-                if (b = (Character.isDigit(array[i]))) {
+                if (Character.isDigit(array[i])) {
                     count++;
                 }
             }
