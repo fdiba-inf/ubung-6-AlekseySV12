@@ -7,7 +7,7 @@ public class PasswordCheck {
         boolean c=false;
         while (c==false) {
             Scanner input = new Scanner(System.in);
-            String password = input.nextLine();
+            String password = input.next();
             char[] array = new char[password.length()];
             boolean a = false;
             boolean b = false;
@@ -23,6 +23,7 @@ public class PasswordCheck {
             if (password.length() >= 8 && a == true && count >= 2) {
                 System.out.println("Password valid!");
                 c=true;
+                break;
             }
         }
     }
